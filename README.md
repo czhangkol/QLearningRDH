@@ -3,19 +3,21 @@
 =======
 
 
-论文名： "[Reversible data hiding based on adaptive pairwise prediction-error expansion and reinforcement learning](https://github.com/czhangkol)" (在投).
+论文名： "[基于自适应成对预测误差扩展与强化学习的可逆数据隐藏](https://github.com/czhangkol)" (在投).
 
 
 ## 方法简介
 
 提出了一个基于强化学习（Q学习）的自适应2D映射的生成方法，为基于高维映射的预测误差扩展方法提供了一个优化方案
+<p align="center"> <img src="./results/4.png" width="70%">    </p>
+<p align="center"> 图1: 2D映射生成训练. </p>
 
 
 ## 如何运行
 
 ```
 进入code文件夹
-运行 main.m文件
+运行 main.m 文件
 ```
 注意：在运行前请准备数据集，并修改main.m文件中的数据集地址，即：
 ```
@@ -24,7 +26,7 @@ imgdir = dir([imgfile,'\*.pgm']);
 ```
 ## 代码文件结构
 ```
-code
+代码
 |
 |-actions.m: 独立文件，用于生成动作空间（Actions.mat）
 |-Actions.mat: 生成的动作空间，第一列为映射动作，第二列为单位容量，第三列为单位失真
@@ -50,20 +52,37 @@ code
 ```
 
 ## 实验结果
+<p align="center"> <img src="./results/5.png" width="60%">    </p>
+<p align="center"> 图2: 生成的2D映射. </p>
 
-待更新...
+<p align="center"> <img src="./results/2.png" width="60%">    </p>
+<p align="center"> 图3: 图像修改对比. </p>
+
+<p align="center"> <img src="./results/3.png" width="100%">    </p>
+<p align="center"> 图4: kodak图像的PSNR结果. </p>
 
 ## 实验环境
 Matlab 2019 <br>
 
 
 ## 致谢
-待更新...
+本研究得到国家自然科学基金（编号：62372067）、湖南省自然科学基金（编号：2025JJ50372）以及湖南省自然科学基金区域联合基金项目（编号：2025JJ70016）资助。
 
 
 
 ## 引用格式
-待更新...
+如果这项工作对您的研究有帮助, 请按如下格式引用：
+```
+@ARTICLE{11346951,
+  author={Zhang, Cheng and Ou, Bo and Yang, Jun and Deng, Hua},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={AI-Assisted Reversible Data Hiding Using Reinforcement Learning}, 
+  year={2026},
+  volume={36},
+  number={5},
+  pages={7111-7124},
+  doi={10.1109/TCSVT.2026.3653502}}
+```
 
 ## 版权声明
 本项目已开源 (详见 ``` MIT LICENSE ``` ).
